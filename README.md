@@ -27,10 +27,6 @@ Don't expect the script to be perfect, of course there's gonna be some bugs in i
 1. [Etherscan](https://etherscan.io/accounts) - You can use this one to find addresses for Ethereum option.
 2. [Solscan](https://solscan.io/leaderboard/account) - You can use this one to find addresses for Solana option.
 
-## 📁 Files
-
-- `spoof.js`: the actual userscript, it's open-sourced so you can check it however you like.
-
 ## ⚠️ Disclaimer
 
 This is a **visual-only LARP**. It does not change your actual @handle, display name, followers and blah blah blah.
