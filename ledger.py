@@ -1,6 +1,3 @@
-# Ledger Live Account Injector — console GUI cloned from your `epic.py`
-# Exact style: same ANSI colors + block-art banner + prompt styling
-
 import os
 import json
 import random
@@ -8,9 +5,6 @@ import string
 import subprocess
 import psutil
 
-# =====================================
-# Colors & block cells (copied style)
-# =====================================
 C0 = "\033[38;2;255;255;255m"  # white
 C1 = "\033[38;2;214;90;66m"   # orange/red accent
 
@@ -26,9 +20,6 @@ B07 = "\033[48;2;214;90;66m  "
 B08 = "\033[48;2;66;156;140m  "
 B09 = "\033[48;2;255;132;99m  "
 
-# =====================================
-# Banner (style lifted from epic.py)
-# =====================================
 banner = f"""
    {BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{B00}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}
    {BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{B00}{B00}{BXX}{BXX}{BXX}{B00}{B00}{B01}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}
@@ -44,8 +35,8 @@ banner = f"""
    {BXX}{BXX}{BXX}{B00}{B03}{B03}{B03}{B02}{B02}{B02}{B02}{B02}{B03}{B01}{B01}{B04}{B00}{BXX}{BXX}{BXX}{B00}{B03}{B05}{B05}{B00}{B03}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}    account will be added
    {BXX}{BXX}{BXX}{B00}{B03}{B03}{B03}{B03}{B02}{B02}{B01}{B03}{B06}{B00}{B01}{B07}{B07}{B00}{B00}{BXX}{B00}{B05}{B05}{B05}{B05}{B03}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}    to Ledger Live config.
    {BXX}{BXX}{BXX}{B00}{B03}{B03}{B04}{B03}{B01}{B01}{B03}{B02}{B08}{B00}{B04}{B07}{B03}{B05}{B05}{B00}{B03}{B03}{B00}{B05}{B03}{B03}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}    
-   {BXX}{BXX}{BXX}{BXX}{B00}{B03}{B07}{B07}{B03}{B01}{B03}{B00}{B00}{B09}{B09}{B03}{B05}{B05}{B05}{B05}{B05}{B00}{BXX}{B00}{B00}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}
-   {BXX}{BXX}{BXX}{BXX}{BXX}{B00}{B04}{B04}{B00}{B00}{B03}{B03}{B03}{B09}{B07}{B03}{B05}{B05}{B05}{B05}{B03}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}
+   {BXX}{BXX}{BXX}{BXX}{B00}{B03}{B07}{B07}{B03}{B01}{B03}{B00}{B00}{B09}{B09}{B03}{B05}{B05}{B05}{B05}{B05}{B00}{BXX}{B00}{B00}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}    Made with love by wish
+   {BXX}{BXX}{BXX}{BXX}{BXX}{B00}{B04}{B04}{B00}{B00}{B03}{B03}{B03}{B09}{B07}{B03}{B05}{B05}{B05}{B05}{B03}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}    and fusi. t.me/larpforfree.
    {BXX}{BXX}{BXX}{BXX}{BXX}{B00}{B03}{B09}{B00}{B00}{B00}{B00}{B07}{B04}{B07}{B03}{B03}{B05}{B05}{B03}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}
    {BXX}{BXX}{BXX}{BXX}{B00}{B03}{B03}{B04}{B09}{B04}{B00}{B09}{B09}{B07}{B07}{B03}{B03}{B03}{B03}{B03}{B00}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}{BXX}
    {BXX}{BXX}{B00}{B00}{B03}{B00}{B00}{B09}{B09}{B09}{B04}{B09}{B07}{B07}{B03}{B03}{B03}{B00}{B00}{B03}{B03}{B00}{B00}{BXX}{BXX}{B00}{B00}{B00}{BXX}{BXX}{BXX}{BXX}
@@ -61,9 +52,6 @@ banner = f"""
 
 """
 
-# =====================================
-# Paths & constants
-# =====================================
 APPDATA_PATH = os.getenv('APPDATA') or ''
 LEDGER_PATH = os.path.join(APPDATA_PATH, 'Ledger Live')
 APP_JSON = os.path.join(LEDGER_PATH, 'app.json')
