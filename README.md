@@ -29,11 +29,11 @@ Don't expect the script to be perfect, of course there's gonna be some bugs in i
 
 ## ⚠️ Disclaimer
 
-This is a **visual-only LARP**. It does not change your actual @handle, display name, followers and blah blah blah.
+This is a **visual-only LARP**. It does not change your actual balance lol.
 Also if you resell this you are a broke no name
 
 ## 🛫 FreeLarpTools Telegram Channel
-I decided to make this script for https://t.me/larpforfree in case if coneticlarp ever decided to make one similar to this, if it has the exact same GUI and same features then we will know if he skidded this shit or not.
+I decided to make this script for https://t.me/larpforfree in case if anyone tries to sell a fake ledger script lol.
 
 ## 👋 Outro
 If for whatever the fuck reason you need support contact @wasthattoomuchforyou or @loficat on telegram heh
